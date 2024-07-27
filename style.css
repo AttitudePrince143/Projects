@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+                            /* Top-style */
+.main-top{
+    background: #000;
+    
+
+}
+
+
+
+.top-contain{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-txt{
+    margin-left: 15px;
+}
+.sign{
+    padding: 2px;
+    margin-right: 1rem;
+    display: flex;
+    
+    
+}
+.sign a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+
+    
+    
+}
+ 
+                /* End */
+
+                /* navBar style */
+
+
+        
+ 
+nav{
+    top: 0;
+    position: sticky;
+    z-index: 100;
+}                
+.main-nav{
+    background:rgb(238, 233, 234);
+    /* margin-top: 10px; */
+
+}                
+
+.nav-contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+
+    
+}
+
+
+.logo-contain img{
+    cursor: pointer;
+   
+   
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+ 
+    
+
+}
+
+.nav-link ul {
+    display: flex;
+    align-items: center;
+    margin-right:20px ;
+   
+}
+
+.nav-link a {
+    list-style: none;
+text-decoration: none;
+padding: 2px;
+margin: 10px;
+
+
+    
+}
+
+
+                        /* home section */
+
+                        
+.home-img img{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+}             
+
+.home-text{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+
+.home-btn{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    padding: 25px;
+    margin-top: 10px;
+    border-radius: 0.5rem;
+}
+
+
+                        /* Cards section */
+
+                        
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 65px;
+
+}                        
+
+.card1{
+    position: relative;
+    width: 330px;
+    margin: 20px;
+}
+
+
+.card1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.871);
+    z-index: 2;
+    opacity: 0;
+}
+
+.card1:hover::after {
+    opacity: 1;
+}
+
+.card1 img {
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+
+.card1-contain{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    color: var(--white);
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    z-index: 5;
+    opacity: 1;
+}
+
+.card1-contain p {
+    font-size: 1.6rem;
+}     
+
+
+.card1:hover .card1-contain {
+    opacity: 1;
+    top: 50%;
+}
